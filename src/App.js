@@ -14,6 +14,7 @@ import { createStructuredSelector } from 'reselect';
 
 class App extends Component {
   unsubscribeFromAuth = null;
+  
 
   componentDidMount() {
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async (userAuth) => {
