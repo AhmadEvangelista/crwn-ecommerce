@@ -1,4 +1,4 @@
-import UserActionTypes from './user.types';
+import { UserActionTypes } from './user.types';
 
 export const googleSignInStart = () => ({
   type: UserActionTypes.GOOGLE_SIGN_IN_START,
@@ -8,7 +8,7 @@ export const emailSignInStart = (emailAndPassword) => ({
   payload: emailAndPassword,
 });
 export const signInSuccess = (user) => ({
-  type: UserActionTypes.SIGN_IN_SUCESS,
+  type: UserActionTypes.SIGN_IN_SUCCESS,
   payload: user,
 });
 export const signInFailure = (error) => ({
